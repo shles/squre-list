@@ -10,7 +10,7 @@ Run tests for tests.
 I focused on modern Swift API and architecture. Also, I spend almost a third of my time on writing tests.
 
 ## What was the reason for your focus? What problems were you trying to solve?
-I was trying to solve the problem of extensive coupling, which regularly appears in iOS projects. As a lead and senior developer, I find this higher-level skill very valuable. As part of it, I spend time writing tests to show how decoupling and decomposition help in testing. At the same time, I tried to keep things simple and overengineer the code.
+I was trying to solve the problem of extensive coupling, which regularly appears in iOS projects. As a lead and senior developer, I find this higher-level skill very valuable. As part of it, I spend time writing tests to show how decoupling and decomposition help in testing. At the same time, I tried to keep things simple and not overengineered.
 
 For my architecture, I used the MVVM approach. Combine is a great tool here to build an event-based architecture. 
 I wrote unit tests for most classes to test their functionality.
