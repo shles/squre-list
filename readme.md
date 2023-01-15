@@ -6,6 +6,8 @@ and deployment target 14.0 for some modern Swift API
 Build and run the project from Xcode.
 Run tests for tests.
 
+The app is build to show different states of the list, according to the response. Each refresh is using different url from the task. So firs loading shows an error, to see the actual list you need to refresh the list two times.
+
 ## What areas of the app did you focus on?
 I focused on modern Swift API and architecture. Also, I spend almost a third of my time on writing tests.
 
