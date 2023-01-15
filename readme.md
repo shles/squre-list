@@ -42,3 +42,6 @@ Of course, I used some parts of the boilerplate code from SO.
 ### Contacts
 
 artlookingforjob@gmail.com
+
+### Task source 
+https://square.github.io/microsite/mobile-interview-project/
