@@ -30,8 +30,6 @@ extension ViewModel.State: Equatable {
             return lContent == rContent
         case (.error(let lError), .error(let rError)):
             return lError == rError
-        case (.loading, .loading):
-            return true
         default:
             return false
         }
