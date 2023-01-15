@@ -15,7 +15,27 @@
 		70F3479A29720CC000B05690 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F3479929720CC000B05690 /* ViewModel.swift */; };
 		70F3479C2972102700B05690 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F3479B2972102700B05690 /* Employee.swift */; };
 		70F3479E2972103F00B05690 /* TabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F3479D2972103F00B05690 /* TabelViewCell.swift */; };
+		70F347A029733CF200B05690 /* EmployeesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F3479F29733CF200B05690 /* EmployeesDataSource.swift */; };
+		70F347AF2973433700B05690 /* EmployeesDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F347AE2973433700B05690 /* EmployeesDataTests.swift */; };
+		70F347B12973456E00B05690 /* EmployeesDataSorseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F347B02973456E00B05690 /* EmployeesDataSorseTests.swift */; };
+		70F347B3297348D700B05690 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F347B2297348D700B05690 /* ViewModelTests.swift */; };
+		70F347B42973498600B05690 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F3479929720CC000B05690 /* ViewModel.swift */; };
+		70F347B529734A0D00B05690 /* EmployeesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F3479F29733CF200B05690 /* EmployeesDataSource.swift */; };
+		70F347B629734C0E00B05690 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F3479B2972102700B05690 /* Employee.swift */; };
+		70F347B829734E7600B05690 /* EmplyeeCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F347B729734E7600B05690 /* EmplyeeCellTests.swift */; };
+		70F347B929734E9B00B05690 /* TabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F3479D2972103F00B05690 /* TabelViewCell.swift */; };
+		70F347BA2973A91B00B05690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F3478929720B3F00B05690 /* ViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70F347A92973430000B05690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70F3477A29720B3F00B05690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70F3478129720B3F00B05690;
+			remoteInfo = SquareList;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		70F3478229720B3F00B05690 /* SquareList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +48,23 @@
 		70F3479929720CC000B05690 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		70F3479B2972102700B05690 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		70F3479D2972103F00B05690 /* TabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelViewCell.swift; sourceTree = "<group>"; };
+		70F3479F29733CF200B05690 /* EmployeesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesDataSource.swift; sourceTree = "<group>"; };
+		70F347A52973430000B05690 /* SquareListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F347AE2973433700B05690 /* EmployeesDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesDataTests.swift; sourceTree = "<group>"; };
+		70F347B02973456E00B05690 /* EmployeesDataSorseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesDataSorseTests.swift; sourceTree = "<group>"; };
+		70F347B2297348D700B05690 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		70F347B729734E7600B05690 /* EmplyeeCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmplyeeCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		70F3477F29720B3F00B05690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F347A22973430000B05690 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				70F3478429720B3F00B05690 /* SquareList */,
+				70F347A62973430000B05690 /* SquareListTests */,
 				70F3478329720B3F00B05690 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				70F3478229720B3F00B05690 /* SquareList.app */,
+				70F347A52973430000B05690 /* SquareListTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,12 +100,24 @@
 				70F3478929720B3F00B05690 /* ViewController.swift */,
 				70F3479D2972103F00B05690 /* TabelViewCell.swift */,
 				70F3479929720CC000B05690 /* ViewModel.swift */,
+				70F3479F29733CF200B05690 /* EmployeesDataSource.swift */,
 				70F3479B2972102700B05690 /* Employee.swift */,
 				70F3478E29720B4100B05690 /* Assets.xcassets */,
 				70F3479029720B4100B05690 /* LaunchScreen.storyboard */,
 				70F3479329720B4200B05690 /* Info.plist */,
 			);
 			path = SquareList;
+			sourceTree = "<group>";
+		};
+		70F347A62973430000B05690 /* SquareListTests */ = {
+			isa = PBXGroup;
+			children = (
+				70F347B2297348D700B05690 /* ViewModelTests.swift */,
+				70F347AE2973433700B05690 /* EmployeesDataTests.swift */,
+				70F347B02973456E00B05690 /* EmployeesDataSorseTests.swift */,
+				70F347B729734E7600B05690 /* EmplyeeCellTests.swift */,
+			);
+			path = SquareListTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +140,24 @@
 			productReference = 70F3478229720B3F00B05690 /* SquareList.app */;
 			productType = "com.apple.product-type.application";
 		};
+		70F347A42973430000B05690 /* SquareListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70F347AB2973430000B05690 /* Build configuration list for PBXNativeTarget "SquareListTests" */;
+			buildPhases = (
+				70F347A12973430000B05690 /* Sources */,
+				70F347A22973430000B05690 /* Frameworks */,
+				70F347A32973430000B05690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70F347AA2973430000B05690 /* PBXTargetDependency */,
+			);
+			name = SquareListTests;
+			productName = SquareListTests;
+			productReference = 70F347A52973430000B05690 /* SquareListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +170,10 @@
 				TargetAttributes = {
 					70F3478129720B3F00B05690 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					70F347A42973430000B05690 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 70F3478129720B3F00B05690;
 					};
 				};
 			};
@@ -122,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				70F3478129720B3F00B05690 /* SquareList */,
+				70F347A42973430000B05690 /* SquareListTests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +206,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70F347A32973430000B05690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -143,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F347A029733CF200B05690 /* EmployeesDataSource.swift in Sources */,
 				70F3478A29720B3F00B05690 /* ViewController.swift in Sources */,
 				70F3478629720B3F00B05690 /* AppDelegate.swift in Sources */,
 				70F3479A29720CC000B05690 /* ViewModel.swift in Sources */,
@@ -152,7 +230,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70F347A12973430000B05690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F347BA2973A91B00B05690 /* ViewController.swift in Sources */,
+				70F347B42973498600B05690 /* ViewModel.swift in Sources */,
+				70F347B529734A0D00B05690 /* EmployeesDataSource.swift in Sources */,
+				70F347B629734C0E00B05690 /* Employee.swift in Sources */,
+				70F347AF2973433700B05690 /* EmployeesDataTests.swift in Sources */,
+				70F347B829734E7600B05690 /* EmplyeeCellTests.swift in Sources */,
+				70F347B929734E9B00B05690 /* TabelViewCell.swift in Sources */,
+				70F347B3297348D700B05690 /* ViewModelTests.swift in Sources */,
+				70F347B12973456E00B05690 /* EmployeesDataSorseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70F347AA2973430000B05690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70F3478129720B3F00B05690 /* SquareList */;
+			targetProxy = 70F347A92973430000B05690 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		70F3479029720B4100B05690 /* LaunchScreen.storyboard */ = {
@@ -216,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,6 +393,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SquareList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,6 +425,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SquareList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +443,44 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		70F347AC2973430000B05690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q9FCUT3E8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shlesberg.SquareListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquareList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SquareList";
+			};
+			name = Debug;
+		};
+		70F347AD2973430000B05690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q9FCUT3E8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shlesberg.SquareListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquareList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SquareList";
 			};
 			name = Release;
 		};
@@ -355,6 +501,15 @@
 			buildConfigurations = (
 				70F3479729720B4200B05690 /* Debug */,
 				70F3479829720B4200B05690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70F347AB2973430000B05690 /* Build configuration list for PBXNativeTarget "SquareListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F347AC2973430000B05690 /* Debug */,
+				70F347AD2973430000B05690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

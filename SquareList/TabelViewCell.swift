@@ -9,15 +9,17 @@ import Foundation
 import UIKit
 
 class EmployeeCell: UITableViewCell {
-//    var nameLabel: UILabel = UILabel()
-//    var teamLabel: UILabel = UILabel()
-//    var photoImageView: UIImageView! = UIImageView()
     
-    static private let imageCache = NSCache<NSString, UIImage>()
+    static internal let imageCache = NSCache<NSString, UIImage>()
+    static var imageSize = CGSize(width: 32, height: 32)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-//        setup()
+        var config = defaultContentConfiguration()
+        config.imageProperties.cornerRadius = 8
+        config.imageProperties.maximumSize = EmployeeCell.imageSize
+        config.imageProperties.reservedLayoutSize = EmployeeCell.imageSize
+        contentConfiguration = config
     }
     
     required init?(coder: NSCoder) {
@@ -25,22 +27,25 @@ class EmployeeCell: UITableViewCell {
     }
     
     func configure(employee: Employee) {
-        
-        textLabel?.text = employee.fullName
-        detailTextLabel?.text = employee.team
+        var config = contentConfiguration as! UIListContentConfiguration
+        config.text = employee.fullName
+        config.secondaryText = employee.emailAddress
+  
         if let image = EmployeeCell.imageCache.object(forKey: employee.photoUrlSmall as NSString) {
-            imageView?.image = image
+            config.image = image
         } else {
-            imageView?.image = UIImage(named: "placeholder")
+            config.image =  UIImage(systemName: "person.fill")
             DispatchQueue.global().async {
                 guard let url = URL(string: employee.photoUrlSmall) else { return }
                 guard let data = try? Data(contentsOf: url) else { return }
                 guard let image = UIImage(data: data) else { return }
                 EmployeeCell.imageCache.setObject(image, forKey: employee.photoUrlSmall as NSString)
                 DispatchQueue.main.async { [weak self] in
-                    self?.imageView?.image = image
+                    config.image = image
+                    self?.contentConfiguration = config
                 }
             }
         }
+        contentConfiguration = config
     }
 }
